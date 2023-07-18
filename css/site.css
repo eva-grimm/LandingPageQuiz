@@ -28,19 +28,17 @@ nav {
 body {
     display: flex;
     flex-direction: column;
-    background-position: 85% 0%;
+    background-position: top;
     background-repeat: no-repeat;
-    background-image: url("/img/LandingPage_1920.png");
-    background-size: auto;
-    background-attachment: fixed;
+    background-image: url("/img/LandingPage_576.png");
     background-color: var(--cf-darkblue);
+    background-size: auto 100%;
 }
 
 /* #endregion Element Overrides */
 
-/* COME BACK TO THIS */
-.navbar-toggler-icon {
-    color: var(--cf-light);
+.navbar {
+    --bs-navbar-toggler-border-color: var(--cf-light);
 }
 
 .nav-link {
@@ -59,22 +57,16 @@ body {
     width: auto;
 }
 
-.content-title {
-    width: auto;
-}
-
 .main-title {
     font-family: 'Racing Sans One', cursive;
-    font-size: 2.5rem;
-    line-height: .8rem;
+    font-size: 1.8rem;
+    line-height: .4rem;
 }
 
 .sub-title {
     font-family: 'Fira Sans', sans-serif;
-    display: flex;
-    font-size: 1rem;
-    white-space: nowrap;
-    max-width: 100%;
+    font-size: .75rem;
+    line-height: .2rem;
 }
 
 .footer {
@@ -82,71 +74,98 @@ body {
 }
 
 .footer span {
-    color: var(--cf-light)
+    color: var(--cf-light);
 }
 
 /* #region Title Breakpoints */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .main-title {
-        font-size: 3rem;
-        line-height: 1.1rem;
-    }
-    
-    .sub-title {
-        font-size: 1.25rem;
+    body {
+        background: url("/img/LandingPage_768.png");
+        background-repeat: no-repeat;
+        background-color: var(--cf-darkblue);
+        background-position: top right;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .main-title {
-        font-size: 3.3rem;
-        line-height: 1.4rem;
+    body {
+        background: url("/img/LandingPage_992.png");
+        background-repeat: no-repeat;
+        background-color: var(--cf-darkblue);
+        background-position: top right;
     }
-    
-    .sub-title {
-        font-size: 1.35rem;
-    }
-}
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    .main-title {
-        font-size: 3.8rem;
-        line-height: 1.6rem;
-    }
-    
-    .sub-title {
-        font-size: 1.6rem;
-    }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
     .content {
         align-items: center;
     }
 
     .main-title {
-        font-size: 4.2rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: .6rem;
     }
     
     .sub-title {
-        font-size: 1.75rem;
+        font-size: .85rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background: url("/img/LandingPage_1200.png");
+        background-repeat: no-repeat;
+        background-color: var(--cf-darkblue);
+        background-position: top right;
+    }
+
+    .main-title {
+        font-size: 2.4rem;
+        line-height: .8rem;
+    }
+    
+    .sub-title {
+        font-size: 1rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background: url("/img/LandingPage_1400.png");
+        background-repeat: no-repeat;
+        background-color: var(--cf-darkblue);
+        background-position: top right;
+    }
+
+    .main-title {
+        font-size: 3.2rem;
+        line-height: 1.35rem;
+    }
+    
+    .sub-title {
+        font-size: 1.35rem;
+        line-height: .8rem;
     }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+    body {
+        background: url("/img/LandingPage_1920.png");
+        background-repeat: no-repeat;
+        background-color: var(--cf-darkblue);
+        background-position: top right;
+        background-size: 100%;
+    }
     .main-title {
-        font-size: 4.7rem;
-        line-height: 2.3rem;
+        font-size: 4rem;
+        line-height: 1.8rem;
     }
     
     .sub-title {
-        font-size: 1.95rem;
+        font-size: 1.7rem;
     }
 }
 /* #endregion Title Breakpoints */
