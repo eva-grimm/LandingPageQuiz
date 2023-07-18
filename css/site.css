@@ -5,24 +5,148 @@
     --cf-highlight: #fae100;
 }
 
+/* #region Element overrides */
+
+a {
+    color: var(--cf-light);
+}
+
+a:hover {
+    color: var(--cf-light);
+}
 
 html,
 body {
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    color: var(--cf-light);
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
-    background-position: top right;
+    background-position: 85% 0%;
     background-repeat: no-repeat;
+    background-image: url("/img/LandingPage_1920.png");
+    background-size: auto;
+    background-attachment: fixed;
+    background-color: var(--cf-darkblue);
+}
+
+/* #endregion Element Overrides */
+
+/* COME BACK TO THIS */
+.navbar-toggler-icon {
+    color: var(--cf-light);
+}
+
+.nav-link {
+    color: var(--cf-light);
+}
+
+.nav-link:hover {
+    color: var(--cf-light);
 }
 
 .content {
+    color: var(--cf-light);
+    display: flex;
     flex: 1 0 auto;
+    align-items: end;
+    width: auto;
+}
+
+.content-title {
+    width: auto;
+}
+
+.main-title {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 2.5rem;
+    line-height: .8rem;
+}
+
+.sub-title {
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    font-size: 1rem;
+    white-space: nowrap;
+    max-width: 100%;
 }
 
 .footer {
     flex-shrink: 0;
 }
+
+.footer span {
+    color: var(--cf-light)
+}
+
+/* #region Title Breakpoints */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .main-title {
+        font-size: 3rem;
+        line-height: 1.1rem;
+    }
+    
+    .sub-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .main-title {
+        font-size: 3.3rem;
+        line-height: 1.4rem;
+    }
+    
+    .sub-title {
+        font-size: 1.35rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .main-title {
+        font-size: 3.8rem;
+        line-height: 1.6rem;
+    }
+    
+    .sub-title {
+        font-size: 1.6rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .content {
+        align-items: center;
+    }
+
+    .main-title {
+        font-size: 4.2rem;
+        line-height: 2rem;
+    }
+    
+    .sub-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .main-title {
+        font-size: 4.7rem;
+        line-height: 2.3rem;
+    }
+    
+    .sub-title {
+        font-size: 1.95rem;
+    }
+}
+/* #endregion Title Breakpoints */
