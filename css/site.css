@@ -149,7 +149,7 @@ body {
         background-repeat: no-repeat;
         background-color: var(--cf-darkblue);
         background-position: top right;
-        background-size: 100%;
+        background-size: cover;
     }
     .main-title {
         font-size: 4rem;
