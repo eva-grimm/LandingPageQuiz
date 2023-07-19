@@ -37,15 +37,7 @@ body {
 
 /* #endregion Element Overrides */
 
-.navbar {
-    --bs-navbar-toggler-border-color: var(--cf-light);
-}
-
-.nav-link {
-    color: var(--cf-light);
-}
-
-.nav-link:hover {
+.myNavBar {
     color: var(--cf-light);
 }
 
@@ -86,6 +78,10 @@ body {
         background-color: var(--cf-darkblue);
         background-position: top right;
     }
+
+    .content {
+        align-items: center;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -95,10 +91,6 @@ body {
         background-repeat: no-repeat;
         background-color: var(--cf-darkblue);
         background-position: top right;
-    }
-
-    .content {
-        align-items: center;
     }
 
     .main-title {
